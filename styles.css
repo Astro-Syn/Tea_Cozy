@@ -1,0 +1,265 @@
+*{
+    margin: 0; 
+}
+
+body{
+    background-color: black;
+    font-family: Helvetica;
+    color: seashell;
+    opacity: 0.7;
+    font-size: 22px;
+    text-align: center;  
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+nav .logo{
+    width: 170px;
+    height: 60px;
+    margin: 5px;
+    
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a{
+    color: seashell;
+    display: block;
+    padding: 3px 10px;
+
+}
+nav ul li a:hover{
+    color: gray;
+}
+
+
+.mission-container{
+    position: relative;
+    margin: 20px;
+    top: 0;
+    left: 50%;
+    width: 90%;
+    height: 700px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./Images/img-mission-background.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+.mission{
+    position: relative;
+    padding: 2%;
+    margin: none;
+    width: 100%;
+    background-color: black;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 10px;
+}
+
+.tea-month-container{
+    position: relative;
+    top: 60%;
+    left: 50%;
+    width: 1000px;
+    height: 50%;
+    margin: 50px;
+    transform: translateX(-50%); 
+}
+
+.tea-month-writing{
+    margin-bottom: 15px;
+}
+.description{
+    margin-bottom: 25px;
+}
+
+.teaimages{
+    display: inline-block;
+    margin: 5px;
+    
+}
+
+
+h2{
+    font-size: 40px;
+}
+
+h4{
+    font-size: 30px;
+    padding: 10px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    line-height: normal;
+    max-width: 90%;
+    font-size: calc(0.6rem + 1vw);
+    
+}
+
+h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.locations-container{
+    position: relative;
+    bottom: 100%;
+    width: 80%;
+    left: 50%;
+    margin: 10px;
+    transform: translateX(-50%);
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: none;
+    background-image: url(./Images/img-locations-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.locations-text{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 45px;
+
+}
+
+.locations-container2{
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.address{
+    position: relative;
+    min-width: 300px;
+    background-color: black;
+    text-align: center;
+    line-height: 70px;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+.bottom-info-container{
+    position: relative;
+    margin: 20px;
+    height: 180px;  
+}
+
+
+.bottom-info-container h2 {
+    margin-bottom: 30px;
+}
+
+.bottom-info-container h5 {
+    margin-bottom: 30px;
+}
+
+.bottom-info-container p {
+    position: relative;
+    bottom: 0%;
+}
+
+footer{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 40px auto;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .mission {
+        font-size: 18px;
+    }
+
+    .locations-container{
+        display: flex;
+        flex-shrink: 0;
+        height: 80%;
+    }
+
+    .locations-container2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .address {
+        position: relative;
+        width: 45%;
+        margin: 10px;
+        font-size: calc(0.9rem + 1vw);
+    }
+    .tea-month-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 auto;
+        max-width: 100%;
+        justify-content: center;
+    }
+    .teaimages{
+        display: flex;
+        flex: 1 1 auto;
+        max-width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;  
+    }
+
+    footer{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
